@@ -25,6 +25,8 @@ public class C03_CssSelector {
         }else{
             System.out.println("Title testi FAILED");
         }
+        // cikan pop-up i engellemek icin
+        driver.findElement(By.xpath("//span[@class='a-button a-spacing-top-base a-button-base glow-toaster-button glow-toaster-button-dismiss']")).click();
         //6-  Gift Cards sekmesine basin
         driver.findElement(By.cssSelector("a[data-csa-c-content-id='nav_cs_gc']")).click();
         //7-  Birthday butonuna basin
